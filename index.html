@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,47 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="calculadora">
         <input type="text" id="display" value="0" disabled>
-        <div class="buttons">
+        <div class="fila-buttons">
             <button onclick="calculatePercentage()">%</button>
             <button onclick="clearDisplay()">CE</button>
             <button onclick="clearDisplay()">C</button>
             <button onclick="clearDisplay()">C</button>
+        </div>
+        <div class="fila-buttons">
             <button onclick="reciprocal()">1/x</button>"
-            <button onclick="root()"></button>"
-            <button onclick="division()">/</button>
-            <button onclick="clearDisplay()">C</button>
-            <button class="calculator-button" onclick="appendToDisplay('7')">7</button>
-            <button class="calculator-button" onclick="appendToDisplay('8')">8</button>
-            <button class="calculator-button" onclick="appendToDisplay('9')">9</button>
+            <button onclick="root()">   </button>"
+            <button onclick="division()"> / </button>
+            <button onclick="clearDisplay()"> c </button>
+        </div>
+        <div class="fila-buttons">
+            <button class="calculator-button" onclick="appendToDisplay('7')"> 7 </button>
+            <button class="calculator-button" onclick="appendToDisplay('8')"> 8 </button>
+            <button class="calculator-button" onclick="appendToDisplay('9')"> 9 </button>
             <button onclick="multiply()">x</button>
-            <button class="calculator-button" onclick="appendToDisplay('4')">4</button>
-            <button class="calculator-button" onclick="appendToDisplay('5')">5</button>
-            <button class="calculator-button" onclick="appendToDisplay('6')">6</button>
-            <button onclick="subtract()">-</button>
-            <button class="calculator-button" onclick="appendToDisplay('1')">1</button>
-            <button class="calculator-button" onclick="appendToDisplay('2')">2</button>
-            <button class="calculator-button" onclick="appendToDisplay('3')">3</button>
-            <button  onclick="add()">+</button>
-            <button onclick="negate()">+/-</button>
-            <button class="calculator-button" onclick="appendToDisplay('0')">0</button>
-            <button class="calculator-button" onclick="appendToDisplay(',')">,</button>
-            <button  onclick="equal()">=</button>
+        </div>
+        <div class="fila-buttons">
+            <button class="calculator-button" onclick="appendToDisplay('4')"> 4 </button>
+            <button class="calculator-button" onclick="appendToDisplay('5')"> 5 </button>
+            <button class="calculator-button" onclick="appendToDisplay('6')"> 6 </button>
+            <button onclick="subtract()"> - </button>
+        </div>
+        <div class="fila-buttons">
+            <button class="calculator-button" onclick="appendToDisplay('1')"> 1 </button>
+            <button class="calculator-button" onclick="appendToDisplay('2')"> 2 </button>
+            <button class="calculator-button" onclick="appendToDisplay('3')"> 3 </button>
+            <button onclick="add()"> + </button>
+        </div>
+        <div class="fila-buttons">
+            <button onclick="negate()"> +/- </button>
+            <button class="calculator-button" onclick="appendToDisplay('0')"> 0 </button>
+            <button class="calculator-button" onclick="appendToDisplay(',')"> , </button>
+            <button onclick="equal()"> = </button>
         </div>
     </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
