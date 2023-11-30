@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
@@ -16,11 +17,11 @@
             <button onclick="calculatePercentage()"> % </button>
             <button onclick="clearDisplay()"> CE </button>
             <button onclick="clearDisplay()"> C </button>
-            <button onclick="clearDisplay()"> C </button>
+            <button onclick="backSpace()"><i class="fa-solid fa-delete-left"></i></button>
             <button onclick="reciprocal()">1/x</button>
-            <button onclick="root()">  x2 </button>
-            <button onclick="division()"> vx </button>
-            <button onclick="clearDisplay()"> / </button>
+            <button onclick="root()"><i class="fa-solid fa-superscript"></i></button>
+            <button onclick="division()"><i class="fa-solid fa-square-root-variable"></i></button>
+            <button onclick="clearDisplay()"><i class="fa-solid fa-divide"></i></button>
             <button class="calculator-button" onclick="appendToDisplay('7')"> 7 </button>
             <button class="calculator-button" onclick="appendToDisplay('8')"> 8 </button>
             <button class="calculator-button" onclick="appendToDisplay('9')"> 9 </button>
@@ -33,10 +34,10 @@
             <button class="calculator-button" onclick="appendToDisplay('2')"> 2 </button>
             <button class="calculator-button" onclick="appendToDisplay('3')"> 3 </button>
             <button onclick="add()"> + </button>
-            <button onclick="negate()"> +/- </button>
+            <button class="calculator-button" onclick="negate()"> +/- </button>
             <button class="calculator-button" onclick="appendToDisplay('0')"> 0 </button>
             <button class="calculator-button" onclick="appendToDisplay(',')"> , </button>
-            <button onclick="equal()"> = </button>
+            <button class="color" onclick="equal()"> = </button>
         </div>
     </div>
     <script src="scripts/script.js"></script>
