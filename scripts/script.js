@@ -48,6 +48,7 @@ function changeSign() {
         display.value = "Error"
     }
 }
+// funcióon mía
 
 function division() {
     try{
@@ -58,4 +59,15 @@ function division() {
         display.value= "Error"
     }
 }
+function add(){
+    try {
+        currentInput= parseFloat(currentInput)
+        display.value=currentInput
+    }catch(error) {
+        display.value ="Error"
+    }
+}
+
+
+
 
